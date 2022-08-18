@@ -5,27 +5,28 @@ body {
 }
 
 .background-container {
-    height: 1024px;
+    /* height: 1024px; */
+    height: 95vh;
     background-image: url(./Assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/* .background-container img {
-
-} */
 
 .header {
-    height: 12rem;
+    position: absolute;
+    height: 8rem;
+    left: 0;
+    right: 0;
     padding-left: 4rem;
     padding-right: 4rem;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     text-shadow: 1px 1px 4px #FFFFFF;
 }
 
 .logotype-header img {
-    width: 300px;
+    width: 200px;
 }
 
 .menu p {
@@ -35,8 +36,10 @@ body {
 .material-symbols-outlined {display: none;}
 
 .heading-content-div {
-    z-index: 3;
-    height: 70%;
+    position: relative;
+    transform: translateY(50%);
+    /* z-index: 3; */
+    height: 60%;
     width: 90%;
     margin-left: 4rem;
     
@@ -44,10 +47,10 @@ body {
 
 .heading-content-div .welcome-text {
     color: #92278e;
-    font-size: 48px;
+    font-size: 36px;
     text-shadow: 1px 1px 4px #FFFFFF;
     font-weight: 600;
-    line-height: 56px;
+    line-height: 44px;
     margin-bottom: 2rem;
     
 }
@@ -57,9 +60,8 @@ button {
     border: none;
     padding: .5rem;
     margin: .5rem;
-    font-size: 28px;
-    
-    width: 16rem;
+    font-size: 24px;
+    width: 14rem;
 }
 
 .pink-btn { background-color: #fdded9 ;}
@@ -67,7 +69,7 @@ button {
 
 
 .product-container {
-    height: 1024px;
+    height: 95vh;
     background-color: aliceblue;
     border-top: white solid 1rem;
     border-bottom: white solid 1rem;
@@ -75,11 +77,9 @@ button {
 }
 
 .product-container div {
-   /*  display: flex;
-    flex-direction: column; */
-     flex-grow: 3;
+    flex-grow: 3;
     width: 30%;
-    height: 500px;
+    height: 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -124,14 +124,15 @@ button {
 }
 
 .about-container {
-    height: 1024px;
+    height: 95vh;
+    border-top: white solid 1rem;
     border-bottom: white solid 1rem;
 }
 
 .about-container div {
     width: 50%;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .about-container h4 {
@@ -153,12 +154,12 @@ button {
 }
 
 footer {
-    height: 12rem;
+    height: 8rem;
     background-color:#fdded9;
 }
 
 .logotype-footer img{
-    width: 300px;
+    width: 200px;
 }
 
 /* Reusable classes */
@@ -175,22 +176,16 @@ footer {
 .header {
     padding-left: 2rem;
     padding-right: 2rem; 
-    font-size: 20px; }
-.logotype-header img {
-    width: 250px;
-}    
+    font-size: 20px; }  
 .heading-content-div {
     margin-left: 2rem;
 }
-.about-container div {font-size: 34px;}
+.about-container div {font-size: 28px;}
 }
 
 @media (max-width: 870px) {
     .header {
-        font-size: 18px; }
-    .logotype-header img {
-        width: 200px;
-    }    
+        font-size: 18px; } 
     .product-container { height: 100%;}
             .product-container div {
                 width: 48%;
@@ -206,25 +201,19 @@ footer {
             .product-container div:nth-child(4) {border-bottom: white solid 1rem; border-top: white solid 1rem; border-right: none;}
             .product-container div:nth-child(5) {border-right: white solid 1rem; border-top: none;}
             .product-container div:nth-child(6) {border: none;}
-            .about-container div { display: flex; flex-grow: 2; font-size: 32px;}
+            .about-container div { display: flex; flex-grow: 2; font-size: 27px;}
     }
 
 
 @media (max-width: 775px) {
         .header {
             font-size: 16px; }  
-            .logotype-header img {
-                width: 180px;
-            }  
             .about-container div {font-size: 30px;}
     }
 
 
     @media (max-width: 710px) {
         .menu { display: none;} 
-            .logotype-header img {
-                width: 250px;
-            }  
             .material-symbols-outlined {display: inherit; font-size: 4rem; margin-top: -3rem;}
             .heading-content-div {
                 text-align: center;
@@ -248,13 +237,13 @@ footer {
             .product-container div:nth-child(6) {border: none; border-bottom: white solid 1rem; text-align: center;}
             .about-container { flex-wrap: wrap;}
             .about-container h4 {padding-left: 0;}
-            .about-container div { height: 50%; width: 100%; align-items: center; text-align: center; font-size: 28px;}
+            .about-container div { height: 50%; width: 100%; align-items: center; text-align: center; font-size: 18px;}
     }
 
     @media (max-width: 530px) {
-        .about-container div {font-size: 24px;}
+        .about-container div {font-size: 16px;}
     }
 
-    @media (max-width: 410px) {
-        .about-container div {font-size: 22px;}
+    @media (max-width: 420px) {
+        .about-container div {font-size: 14px;}
     }
