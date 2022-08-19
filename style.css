@@ -62,10 +62,53 @@ button {
     margin: .5rem;
     font-size: 24px;
     width: 14rem;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px #FFFFFF;
 }
 
-.pink-btn { background-color: #fdded9 ;}
+.pink-btn { 
+    background-color: #fdded9;}
 .green-btn { background-color: #cce5bb;}
+
+
+.about-container {
+    height: 95vh;
+    border-top: white solid 1rem;
+}
+
+.about-container div {
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.about-container h4 {
+    font-size: 30px;
+    color: #92278e;
+    padding-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.about-container .about-picture{
+    background-image: url(./Assets/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-container p {
+    padding: 0 4rem
+}
+
+.about-text {
+    width: 100%;
+}
+
+.about-div {
+    /* height: 100%; */
+    width: 100%;
+}
 
 
 .product-container {
@@ -82,6 +125,16 @@ button {
     height: 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    
+}
+
+.product-container p {
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
 }
 
 .product-container img {background-position: center;}
@@ -123,39 +176,36 @@ button {
     text-shadow: 1px 1px 4px #FFFFFF;
 }
 
-.about-container {
-    height: 95vh;
-    border-top: white solid 1rem;
-    border-bottom: white solid 1rem;
-}
 
-.about-container div {
-    width: 50%;
-    font-weight: 400;
-    font-size: 32px;
-}
 
-.about-container h4 {
-    font-size: 48px;
-    color: #92278e;
+.contact-div {
+    height: 30vh;
+    background-color:#cce5bb;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 24px;
     padding-left: 4rem;
-    margin-top: 2rem;
+    padding-right: 4rem;
+}
+
+.contact-div h4 {
+    margin: 0;
+    font-size: 30px;
+    color: #92278e;
     margin-bottom: 0;
 }
 
-.about-container div:nth-child(1){
-    background-image: url(./Assets/about.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.about-container p {
-    padding: 0 4rem
+.contact-or{
+   /*  color: #92278e; */
+    font-size: 36px;
+    text-shadow: 1px 1px 4px #FFFFFF;
+    font-weight: 600;
 }
 
 footer {
     height: 8rem;
-    background-color:#fdded9;
+    /* background-color:#fdded9; */
+    background-image: url(./Assets/background.png);
 }
 
 .logotype-footer img{
@@ -180,7 +230,7 @@ footer {
 .heading-content-div {
     margin-left: 2rem;
 }
-.about-container div {font-size: 28px;}
+.about-container div {font-size: 18px;} 
 }
 
 @media (max-width: 870px) {
@@ -201,14 +251,14 @@ footer {
             .product-container div:nth-child(4) {border-bottom: white solid 1rem; border-top: white solid 1rem; border-right: none;}
             .product-container div:nth-child(5) {border-right: white solid 1rem; border-top: none;}
             .product-container div:nth-child(6) {border: none;}
-            .about-container div { display: flex; flex-grow: 2; font-size: 27px;}
+            .about-container div {font-size: 16px;}
     }
 
 
 @media (max-width: 775px) {
         .header {
             font-size: 16px; }  
-            .about-container div {font-size: 30px;}
+            .about-container div {font-size: 16px;}
     }
 
 
@@ -237,11 +287,12 @@ footer {
             .product-container div:nth-child(6) {border: none; border-bottom: white solid 1rem; text-align: center;}
             .about-container { flex-wrap: wrap;}
             .about-container h4 {padding-left: 0;}
-            .about-container div { height: 50%; width: 100%; align-items: center; text-align: center; font-size: 18px;}
-    }
+            .about-container div { height: 50%; width: 100%; align-items: center; text-align: center; font-size: 16px;}
+            .contact-div {flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 50vh; padding-top: 1rem; padding-bottom: 1rem;}
+        }
 
     @media (max-width: 530px) {
-        .about-container div {font-size: 16px;}
+        .about-container div {font-size: 14px;}
     }
 
     @media (max-width: 420px) {
